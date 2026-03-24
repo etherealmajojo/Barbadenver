@@ -2,135 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Barba Denver | Premier Barbershop in Denver, CO</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BarberShop",
-      "name": "Barba Denver",
-      "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=800",
-      "@id": "",
-      "url": "https://barbadenver.com",
-      "telephone": "",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "3460 Park Ave W #D",
-        "addressLocality": "Denver",
-        "addressRegion": "CO",
-        "postalCode": "80216",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 39.768,
-        "longitude": -104.985
-      },
-      "openingHoursSpecification": [
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "18:00" },
-        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "17:00" }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "45"
-      }
-    }
-    </script>
-
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+        /* Hide scrollbar for cleaner mobile look */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
-
-    <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 py-4 px-6 flex justify-between items-center">
-        <div class="text-2xl font-800 tracking-tighter text-black uppercase">Barba Denver</div>
-        <a href="tel:BOOKING_ONLY" class="bg-black text-white px-6 py-2 rounded-full font-bold text-sm hover:bg-gray-800 transition">BOOK NOW</a>
+<body class="bg-white text-gray-900 pb-24 md:pb-0"> <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 py-3 px-4 flex justify-between items-center">
+        <div class="text-xl font-800 tracking-tighter uppercase">Barba Denver</div>
+        <div class="flex items-center gap-1">
+            <span class="text-yellow-500 text-sm">★</span>
+            <span class="font-bold text-sm">5.0</span>
+        </div>
     </nav>
 
-    <header class="relative bg-black text-white py-24 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-800 mb-6 leading-tight">PREMIER CUTS IN <span class="text-gray-400">DENVER</span></h1>
-            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Highly detailed haircuts and grooming at 3460 Park Ave W. Experience the gold standard of barbershop services.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#services" class="bg-white text-black px-10 py-4 rounded-md font-bold text-lg hover:bg-gray-200 transition">View Services</a>
-                <div class="flex items-center justify-center gap-2 px-6">
-                    <span class="text-yellow-400 text-2xl">★★★★★</span>
-                    <span class="font-bold">5.0 (45+ Reviews)</span>
-                </div>
-            </div>
-        </div>
+    <header class="relative bg-black text-white py-16 px-6 text-center">
+        <h1 class="text-4xl font-800 mb-4 leading-tight tracking-tight uppercase">
+            The Gold Standard <br><span class="text-gray-400 text-3xl">of Barbershops</span>
+        </h1>
+        <p class="text-lg text-gray-400 mb-8 max-w-sm mx-auto">Precision fades and grooming in the heart of Denver.</p>
+        <a href="#services" class="inline-block bg-white text-black px-8 py-3 rounded-full font-800 uppercase tracking-wide text-sm shadow-lg active:scale-95 transition">
+            Explore Services
+        </a>
     </header>
 
-    <section id="services" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-800 uppercase tracking-tight">Our Services</h2>
-                <div class="h-1 w-20 bg-black mx-auto mt-4"></div>
+    <section class="py-10 px-4">
+        <h2 class="text-xs font-800 text-gray-400 uppercase tracking-widest mb-6 text-center">Top Rated Services</h2>
+        <div class="flex overflow-x-auto gap-4 no-scrollbar pb-4">
+            <div class="min-w-[280px] bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-lg mb-1">The Works</h3>
+                <p class="text-sm text-gray-500 mb-4">Haircut, beard, eyebrows + Hot Towel.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-xl font-800">$70</span>
+                    <span class="bg-black text-white text-[10px] px-2 py-1 rounded uppercase">Most Popular</span>
+                </div>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 border border-gray-100 shadow-sm rounded-xl">
-                    <h3 class="text-xl font-bold mb-2">The Works</h3>
-                    <p class="text-gray-500 mb-4 text-sm leading-relaxed">Haircut, beard trim, eyebrows, and a relaxing hot towel treatment.</p>
-                    <span class="text-2xl font-800 text-black">$70</span>
-                </div>
-                <div class="bg-white p-8 border border-gray-100 shadow-sm rounded-xl">
-                    <h3 class="text-xl font-bold mb-2">Men's Cut + Beard</h3>
-                    <p class="text-gray-500 mb-4 text-sm leading-relaxed">Full service shape-up, shave, and sculpt. Hot towel included.</p>
-                    <span class="text-2xl font-800 text-black">$100</span>
-                </div>
-                <div class="bg-white p-8 border border-gray-100 shadow-sm rounded-xl">
-                    <h3 class="text-xl font-bold mb-2">Father & Son Bundle</h3>
-                    <p class="text-gray-500 mb-4 text-sm leading-relaxed">One men's cut and one kid's cut (back-to-back sessions).</p>
-                    <span class="text-2xl font-800 text-black">$115</span>
-                </div>
+            <div class="min-w-[280px] bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-lg mb-1">Men's Cut + Beard</h3>
+                <p class="text-sm text-gray-500 mb-4">Full shape-up, shave, and sculpt.</p>
+                <span class="text-xl font-800">$100</span>
+            </div>
+            <div class="min-w-[280px] bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm">
+                <h3 class="font-bold text-lg mb-1">Father & Son</h3>
+                <p class="text-sm text-gray-500 mb-4">Back-to-back bundle sessions.</p>
+                <span class="text-xl font-800">$115</span>
             </div>
         </div>
     </section>
 
-    <section class="bg-gray-100 py-20 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl font-800 mb-12">WHAT CLIENTS SAY</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm text-left italic">
-                    <p class="mb-4 text-gray-700">"Mikey is top notch. Best fade I've gotten since moving to Denver. They really pay attention to the details here."</p>
-                    <p class="font-bold text-black">— Pablo C.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm text-left italic">
-                    <p class="mb-4 text-gray-700">"Highly recommended. The vibe is great and the haircuts are even better. 10/10 experience every time."</p>
-                    <p class="font-bold text-black">— Verified Client</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm text-left italic">
-                    <p class="mb-4 text-gray-700">"Finally found a place that knows how to handle a beard and a skin fade. Cleanest line-up in the city."</p>
-                    <p class="font-bold text-black">— Local Guide</p>
-                </div>
+    <section class="bg-black text-white py-16 px-6">
+        <h2 class="text-2xl font-800 mb-10 text-center uppercase tracking-tight">Client Reviews</h2>
+        <div class="space-y-6">
+            <div class="border-l-2 border-gray-700 pl-4 py-2">
+                <p class="text-gray-300 italic mb-2">"Best fade I've gotten since moving to Denver. They really pay attention to the details here."</p>
+                <p class="font-bold text-sm uppercase">— Pablo C.</p>
+            </div>
+            <div class="border-l-2 border-gray-700 pl-4 py-2">
+                <p class="text-gray-300 italic mb-2">"Finally found a place that knows how to handle a beard and a skin fade."</p>
+                <p class="font-bold text-sm uppercase">— Local Guide</p>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
-            <h2 class="text-3xl font-800 mb-6">LOCATION & HOURS</h2>
-            <p class="mb-6 text-gray-600">3460 Park Ave W #D<br>Denver, CO 80216</p>
-            
-            <ul class="space-y-2 border-l-2 border-black pl-6">
-                <li><span class="font-bold">Mon - Fri:</span> 10:00 AM – 6:00 PM</li>
-                <li><span class="font-bold">Sat:</span> 9:00 AM – 5:00 PM</li>
-                <li><span class="font-bold">Sun:</span> Closed</li>
-            </ul>
-        </div>
-        <div class="h-80 bg-gray-200 rounded-xl overflow-hidden shadow-inner flex items-center justify-center">
-            <p class="text-gray-500 font-bold uppercase tracking-widest">[ Google Maps Embed Placeholder ]</p>
+    <section class="py-16 px-6 text-center">
+        <h2 class="text-2xl font-800 mb-4 uppercase">Find Us</h2>
+        <p class="text-gray-600 mb-8">3460 Park Ave W #D, Denver, CO 80216</p>
+        
+        <div class="bg-gray-100 rounded-2xl p-6 mb-8 inline-block w-full max-w-md text-left">
+            <div class="flex justify-between py-2 border-b border-gray-200">
+                <span class="font-semibold">Mon - Fri</span>
+                <span>10AM - 6PM</span>
+            </div>
+            <div class="flex justify-between py-2 border-b border-gray-200">
+                <span class="font-semibold">Saturday</span>
+                <span>9AM - 5PM</span>
+            </div>
+            <div class="flex justify-between py-2">
+                <span class="font-semibold">Sunday</span>
+                <span class="text-red-500">Closed</span>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-black text-white py-12 px-6 text-center">
-        <p class="opacity-50">&copy; 2026 Barba Denver. All Rights Reserved.</p>
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 flex gap-3 z-[100] md:hidden shadow-[0_-5px_15px_rgba(0,0,0,0.05)]">
+        <a href="tel:7200000000" class="flex-1 bg-gray-100 text-black text-center py-4 rounded-xl font-800 uppercase text-sm active:bg-gray-200 transition">
+            Call
+        </a>
+        <a href="https://getsquire.com/barba-denver" class="flex-[2] bg-black text-white text-center py-4 rounded-xl font-800 uppercase text-sm active:bg-gray-800 transition">
+            Book Appointment
+        </a>
+    </div>
+
+    <footer class="bg-gray-50 py-12 px-6 text-center">
+        <p class="text-xs text-gray-400 font-bold tracking-widest uppercase">Barba Denver &copy; 2026</p>
     </footer>
 
 </body>
